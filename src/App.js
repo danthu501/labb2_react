@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import * as React from "react"
 import {Routes, Route, Link} from 'react-router-dom';
 import {useEffect, useState} from "react";
 
@@ -7,9 +8,9 @@ export default function App() {
 return (
     <div className="App">
         <Routes>
-            <Route path="./" element = {<Home/>}/>
-            <Route path="./About/" element = {<About/>}/>
-            <Route path="./Privacy/" element = {<Privacy/>}/>
+            <Route path="/" element = {<Home/>}/>
+            <Route path="/About/" element = {<About/>}/>
+            <Route path="/Privacy/" element = {<Privacy/>}/>
         </Routes>
     </div>
 );
